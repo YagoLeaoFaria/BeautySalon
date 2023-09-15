@@ -25,13 +25,13 @@ img {
   /* colors */
   --hue: 159;
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 36% 57%);
-  --base-color-second: hsl(var(--hue) 65% 88%);
-  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --base-color: #e0da66;
+  --base-color-second: #ECD172;
+  --base-color-alt: #E6C972;
   --title-color: hsl(var(--hue) 41% 10%);
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
-  --body-color: hsl(0 0% 98%);
+  --body-color: #ffffe0;
 
   /* fonts */
   --title-font-size: 1.875rem;
@@ -69,6 +69,11 @@ body {
   border-radius: 0.25rem;
   font: 500 1rem var(--body-font);
   transition: background 0.3s;
+}
+
+.button .icon-whatsapp {
+  font-size: 24px;
+  padding-right: 10px;
 }
 
 .button:hover {
@@ -143,6 +148,7 @@ body {
 
 /*====  LOGO ============================ */
 .logo {
+  display: flex;
   font: 700 1.31rem var(--title-font);
   color: var(--title-color);
 }
@@ -262,6 +268,11 @@ nav.show div.icon-close {
   overflow: hidden;
 }
 
+#img1 {
+  width: 600px;
+  height: 350px;
+}
+
 #home .container {
   margin: 0;
 }
@@ -308,6 +319,10 @@ nav.show div.icon-close {
 /*====  ABOUT ============================ */
 #about {
   background: white;
+}
+
+.about-opt {
+  list-style: disc;
 }
 
 #about .container {
